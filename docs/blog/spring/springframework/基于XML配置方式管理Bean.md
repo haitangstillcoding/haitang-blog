@@ -6,7 +6,6 @@ tag:
  - IoC
  - DI
 date: 2023-12-1 20:00:00
-top: 1
 ---
 # 基于XML配置方式管理Bean
 
