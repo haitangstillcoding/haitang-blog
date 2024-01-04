@@ -4,7 +4,6 @@ recommend: false
 tag:
  - Redis
 date: 2023-12-31 00:30:00
-top: 2
 ---
 # Redis数据类型概述
 
@@ -14,7 +13,7 @@ top: 2
 
 > 这里说的数据类型是 value 的数据类型，key 的类型都是字符串。
 
-## Redis字符串（String）
+## Redis 字符串（String）
 
 string 是 Redis 最基本的类型，一个 key 对应一个 value。
 
@@ -22,19 +21,19 @@ string 类型是二进制安全的，意思是 Redis 的 string 可以包含任�
 
 String 类型是 Redis 最基本的数据类型，一个 Redis 中字符串 value 最多可以是512M。
 
-## Redis列表（List）
+## Redis 列表（List）
 
 Redis list 列表是简单的字符串列表，按照插入顺序排序。你可以添加一个元素到列表的头部（左边）或者尾部（右边）
 
 它的底层实际是个双端链表，最多可以包含 2<sup>32</sup> - 1 个元素 （4294967295，每个列表超过40亿个元素）。
 
-## Redis哈希表（Hash）
+## Redis 哈希表（Hash）
 
 Redis hash 是一个 string 类型的 field（字段） 和 value（值） 的映射表，hash 特别适合用于存储对象。
 
 Redis 中每个 hash 可以存储 2<sup>32</sup> - 1 键值对（40多亿）。
 
-## Redis集合（Set）
+## Redis 集合（Set）
 
 Redis 的 set 是 string 类型的无序集合。集合成员是唯一的，这就意味着集合中不能出现重复的数据，集合对象的编码可以是 intset 或者 hashtable。
 
@@ -42,7 +41,7 @@ Redis 中 set 集合是通过哈希表实现的，所以添加，删除，查找
 
 集合中最大的成员数为 2<sup>32</sup> - 1（4294967295，每个集合可存储40多亿个成员）
 
-## Redis有序集合（ZSet）
+## Redis 有序集合（ZSet）
 
 Redis zset 和 set 一样也是 string 类型元素的集合，且不允许重复的成员。
 
@@ -52,7 +51,7 @@ zset 的成员是唯一的，但分数（score）却可以重复。
 
 zset 集合是通过哈希表实现的，所以添加，删除，查找的复杂度都是 O(1)。 集合中最大的成员数为 2<sup>32</sup> - 1
 
-## Redis地理空间（GEO）
+## Redis 地理空间（GEO）
 
 Redis GEO 主要用于存储地理位置信息，并对存储的信息进行操作，包括
 
@@ -62,7 +61,7 @@ Redis GEO 主要用于存储地理位置信息，并对存储的信息进行操�
 
 - 根据用户给定的经纬度坐标来获取指定范围内的地理位置集合
 
-## Redis基数统计（HyperLogLog）
+## Redis 基数统计（HyperLogLog）
 
 HyperLogLog 是用来做基数统计的算法，HyperLogLog 的优点是，在输入元素的数量或者体积非常非常大时，计算基数所需的空间总是固定且是很小的。
 
@@ -70,19 +69,19 @@ HyperLogLog 是用来做基数统计的算法，HyperLogLog 的优点是，在�
 
 但是，因为 HyperLogLog 只会根据输入元素来计算基数，而不会储存输入元素本身，所以 HyperLogLog 不能像集合那样，返回输入的各个元素。
 
-## Redis位图（bitmap）
+## Redis 位图（bitmap）
 
 由0和1状态表现的二进制位的 bit 数组
 
 ![bitmap位图](.\images\bitmap位图.png)
 
-## Redis位域（bitfield）
+## Redis 位域（bitfield）
 
 通过 bitfield 命令可以一次性操作多个比特位域（指的是连续的多个比特位），它会执行一系列操作并返回一个响应数组，这个数组中的元素对应参数列表中的相应操作的执行结果。
 
 说白了就是通过 bitfield 命令我们可以一次性对多个比特位域进行操作。
 
-## Redis流（Stream）
+## Redis 流（Stream）
 
 Redis Stream 是 Redis 5.0 版本新增加的数据结构。
 

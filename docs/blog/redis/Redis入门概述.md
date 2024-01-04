@@ -4,7 +4,6 @@ recommend: false
 tag:
  - Redis
 date: 2023-12-29 16:30:00
-top: 4
 ---
 # Redis入门概述
 

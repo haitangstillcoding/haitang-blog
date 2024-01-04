@@ -3,8 +3,8 @@ hidden: true
 readingTime: false
 recommend: 1
 ---
-# JavaSE
+# Swagger
 
 | 日期 | 标题                    |
 | ---------- | ------------------------- |
-| 2024/1/2 | [集合框架](集合框架.md) |
+| 2024-01-04 | [Swagger和Springboot的整合](Swagger和Springboot的整合.md) |

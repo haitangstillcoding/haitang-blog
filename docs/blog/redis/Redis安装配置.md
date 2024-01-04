@@ -4,7 +4,6 @@ recommend: false
 tag:
  - Redis
 date: 2023-12-30 23:30:00
-top: 3
 ---
 # Redis安装配置
 
@@ -30,7 +29,7 @@ yum install -y gcc-c++
 gcc -v
 ```
 
-## Redis7安装步骤
+## Redis7 安装步骤
 
 1. 下载获得 redis-7.0.0.tar.gz 后将它放入我们的 Linux 目录 /opt
 
@@ -161,7 +160,7 @@ gcc -v
     lsof -i:端口号
     ```
 
-## Redis7卸载步骤
+## Redis7 卸载步骤
 
 1. 停止 redis-server 服务
 
