@@ -21,7 +21,7 @@ https://redis.io/docs/data-types/strings/
 
 ## 常用命令
 
-![string类型常用命令](G:\haitang-blog\docs\blog\redis\images\string类型常用命令.png)
+![string类型常用命令](.\images\string类型常用命令.png)
 
 > 特点：单值单value
 >
@@ -30,8 +30,16 @@ https://redis.io/docs/data-types/strings/
 
 ### 最常用
 
+```shell
+set key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT unix-time-seconds|PXAT unix-time-milliseconds|KEEPTTL]
 ```
-set key value
+
+![set_key_value](.\images\set_key_value.png)
+
+> 如何获得设置指定的 Key 过期的 Unix 时间，单位为秒
+
+```java
+System.out.println(Long.toString(System.currentTimeMillis*()/1000L));
 ```
 
 ### 同时设置/获取多个键值
