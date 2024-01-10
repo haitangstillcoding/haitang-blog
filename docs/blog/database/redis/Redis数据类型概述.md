@@ -1,5 +1,5 @@
 ---
-cover: /blog/redis/images/redis数据类型.png
+cover: /blog/database/redis/images/redis数据类型.png
 recommend: false
 tag:
  - Redis

@@ -60,27 +60,32 @@ const blogTheme = getThemeConfig({
   author: 'Haitang',
 
   // 友链
-  friend: [
-    {
-      nickname: '粥里有勺糖',
-      des: '你的指尖用于改变世界的力量',
-      avatar:
-        'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
-      url: 'https://sugarat.top',
-    },
-    {
-      nickname: 'Vitepress',
-      des: 'Vite&Vue提供的静态站点生成器',
-      avatar: '/friend/vitepress-logo.webp',
-      url: 'https://vitepress.dev/',
-    },
-    {
-      nickname: '电脑帮手',
-      des: '你的贴身电脑管家',
-      avatar: '/friend/computerHelper.png',
-      url: 'http://www.computerhelper.top/',
-    },
-  ],
+  friend: {
+    random: true,
+    limit: 2,
+    scrollSpeed: 10000,
+    list: [
+      {
+        nickname: '粥里有勺糖',
+        des: '你的指尖用于改变世界的力量',
+        avatar:
+          'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
+        url: 'https://sugarat.top',
+      },
+      {
+        nickname: 'Vitepress',
+        des: 'Vite&Vue提供的静态站点生成器',
+        avatar: '/friend/vitepress-logo.webp',
+        url: 'https://vitepress.dev/',
+      },
+      {
+        nickname: '电脑帮手',
+        des: '你的贴身电脑管家',
+        avatar: '/friend/computerHelper.png',
+        url: 'http://www.computerhelper.top/',
+      }
+    ],
+  },
 
   // 公告
   // popover: {

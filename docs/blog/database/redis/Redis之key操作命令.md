@@ -1,5 +1,5 @@
 ---
-cover: /blog/redis/images/常用key.png
+cover: /blog/database/redis/images/常用key.png
 recommend: false
 tag:
  - Redis

@@ -1,7 +1,7 @@
 ---
 description: 通过Docker容器快速部署Nginx服务器
 recommend: false
-cover: /blog/docker/images/nginx.jpeg
+cover: /blog/devops/docker/images/nginx.jpeg
 tag:
  - Docker
  - Nginx

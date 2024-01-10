@@ -1,5 +1,5 @@
 ---
-cover: /blog/redis/images/6379端口来源.png
+cover: /blog/database/redis/images/6379端口来源.png
 recommend: false
 tag:
  - Redis

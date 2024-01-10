@@ -1,10 +1,11 @@
 ---
-cover: /blog/redis/images/常用key.png
+cover: /blog/database/redis/images/常用key.png
 recommend: false
 tag:
  - Redis
 date: 2023-12-31 11:30:00
 top: 1
+sticky: 1
 ---
 # Redis数据类型之string
 

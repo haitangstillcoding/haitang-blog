@@ -1,5 +1,9 @@
 const nav = [
     {
+        text: '首页',
+        link: '/'
+    },
+    {
         text: 'Java',
         items: [
             { text: 'JavaSE', link: '/blog/java/javase/' },
@@ -8,33 +12,35 @@ const nav = [
         ]
     },
     {
-        text: '数据库',
+        text: 'Database',
         items: [
             { text: 'MySQL', link: '/blog/database/mysql/' },
+            { text: 'Redis', link: '/blog/database/redis/' },
+            { text: 'MongoDB', link: '/blog/database/mongodb/' },
+            { text: 'Elasticsearch', link: '/blog/database/elasticsearch/' },
         ]
     },
     {
         text: 'Spring',
         items: [
-            { text: 'SpringFramework', link: '/blog/spring/springframework/' },
+            { text: 'Springframework', link: '/blog/spring/springframework/' },
+            { text: 'SpringMVC', link: '/blog/spring/springmvc/' },
+            { text: 'SpringBoot', link: '/blog/spring/springboot/' },
         ]
     },
     {
         text: 'Devops',
         items: [
             { text: 'Docker', link: '/blog/devops/docker/' },
+            { text: 'Nginx', link: '/blog/devops/nginx/' },
+            { text: 'Kubernetes', link: '/blog/devops/kubernetes/' },
         ]
     },
     {
         text: '消息队列',
         items: [
             { text: 'Kafka', link: '/blog/mq/kafka/' },
-        ]
-    },
-    {
-        text: '练习项目',
-        items: [
-            { text: '谷粒随享', link: '/blog/project/glsx/' },
+            { text: 'RabbitMQ', link: '/blog/mq/rabbitmq/' },
         ]
     },
     {

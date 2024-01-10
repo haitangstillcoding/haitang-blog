@@ -1,10 +1,11 @@
 ---
-cover: /blog/swagger/images/swagger-ui.png
+cover: /blog/swagger/images/ApiResponse.png
 recommend: false
 tag:
  - Swagger
 date: 2024-01-04 21:50:00
 top: 1
+sticky: 1
 ---
 # Swagger常用注解
 

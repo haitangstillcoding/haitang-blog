@@ -1,5 +1,5 @@
 ---
-cover: /blog/redis/images/redis版本演进.png
+cover: /blog/database/redis/images/redis版本演进.png
 recommend: false
 tag:
  - Redis
